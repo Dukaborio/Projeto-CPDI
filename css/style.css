@@ -195,21 +195,42 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #b7b7b7;
+    /*color: #b7b7b7;
+    /*  */
+    transition: 300ms;
+    background: #C5DC18;
+    background: -webkit-linear-gradient(to right, #C5DC18 0%, #FF7E75 100%);
+    background: -moz-linear-gradient(to right, #C5DC18 0%, #FF7E75 100%);
+    background: linear-gradient(to right, #C5DC18 0%, #FF7E75 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
 }
 .nav-link:hover,
 .nav-active{
-    color: var(--text-color);
-    transition: 0.3;
-    -webkit-transition: 0.3;
-    -moz-transition: 0.3;
-    -ms-transition: 0.3;
-    -o-transition: 0.3;
+    /*color: var(--text-color);
+    */background: #C5DC18;
+    background: -webkit-linear-gradient(to right, #C5DC18 77%, #FF7E75 100%);
+    background: -moz-linear-gradient(to right, #C5DC18 77%, #FF7E75 100%);
+    background: linear-gradient(to right, #C5DC18 77%, #FF7E75 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition:0.3s;
+    -webkit-transition:0.3s;
+    -moz-transition:0.3s;
+    -ms-transition:0.3s;
+    -o-transition:0.3s;
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
+    -webkit-transition: 0.;
+    filter: drop-shadow(0 0 20px #C5DC18) contrast(2) brightness(4);
+    -webkit-filter: drop-shadow(0 0 20px #C5DC18) contrast(2) brightness(4);
 }
 .nav-link .bx{
     font-size: 20px;
@@ -266,7 +287,7 @@ main{
     color: var(--text-color);
 }
 .watch-btn .bx{
-    font-size: 21px;
+    /*font-size: 21px;
     background: var(--main-color);
     width: 110px;
     height: 35px;
@@ -278,10 +299,34 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #000000;
+    */font-size: 21px;
+    color: #000;
+    background-color: #c5dc18;
+    padding: 10px 30px;
+    border: solid var(--hover-color) 2px;
+    box-shadow: none;
+    border-radius: 11px;
+    transition: 1000ms;
+    transform: translateY(0);
+    -webkit-transition: 1000ms;
+    -moz-transition: 1000ms;
+    -ms-transition: 1000ms;
+    -o-transition: 1000ms;
 }
 .watch-btn .bx:hover{
-    background: var(--hover-color);
+    /*background: var(--hover-color);
+    */transition: 1000ms;
+    padding: 10px 36px;
+    transform: translateY(-0px);
+    background-color: #9eb10c;
+    /*color: #9eb10c;
+    */border: solid 2px var(--main-color);
+    -webkit-transform: translateY(-0px);
+    -moz-transform: translateY(-0px);
+    -ms-transform: translateY(-0px);
+    -o-transform: translateY(-0px);
+    filter: drop-shadow(0 0 20px var(--hover-color)) contrast(2) brightness(1);
+    -webkit-filter: drop-shadow(0 0 20px var(--hover-color)) contrast(2) brightness(1);
 }
 .watch-btn span{
     font-size: 16px;
@@ -326,6 +371,7 @@ main{
     height: 100%;
     /* object-fit: cover; */
     object-fit: fill;
+    transition: 0.5s;
 }
 .filme-box .box-text{
     position: absolute;
@@ -534,12 +580,32 @@ main{
     -o-border-radius: 50%;
     border: 2px solid var(--main-color);
 }
+.elenco-box{
+    transition: 0.5s;
+}
+
+.elenco .elenco-box:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
 .elenco-title{
     font-size: 14px;
     color: var(--main-color);
+    display: flex;
+    justify-content: center;
 }
 .elenco-char{
     font-size: 12px;
+    display: flex;
+    justify-content: center;
 }
 footer{
     margin-top: 200px;
