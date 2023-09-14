@@ -685,6 +685,8 @@ footer{
     }
     .watch-btn .bx{
         width: 50px;
+        display: flex;
+        justify-content: center;
     }
     .swiper-slide .watch-btn .bx{
         margin-bottom: 25vh;
